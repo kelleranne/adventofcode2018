@@ -7,5 +7,10 @@ math.floor(fuel)
 fuel = fuel - 2
 print(fuel)
 
+def sumAllFuel ():
+    allFuel = ""
+    with open("day1.txt", "r") as file:
+        allFuel = file.read().replace('\n', '')
+        print(allFuel)
 
-
+sumAllFuel()
